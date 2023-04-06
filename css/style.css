@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@500&display=swap');
+* {box-sizing: border-box;}
+
+html{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+image{max-width: 100%;}
+
+main{background-color: #8DAB4A;}
+
+h1, h2, p {
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: rgb(3,70,64);
+    background: linear-gradient(180deg, rgba(3,70,64,1) 0%, rgba(5,79,89,1) 21%, rgba(141,171,74,1) 36%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3,70,64);
+    height: 50px;
+    padding: 1.5rem;
+}
+header nav a{
+    padding: 1.6rem;
+    color: #F6EBEB;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.banner{
+    background-image: url(/imagens/slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 6rem;
+}
+
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    text-align: right;
+    font-size: 6rem;
+    color: #6de2ff;
+}
+
+#filme-1,#filme-2,#filme-3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 94%;
+    margin: auto;
+    margin: 2rem 0px 1rem 0px;
+}
+
+article img{
+    border-radius: 14px; 
+}
+
+.texto{
+    color: #F6EBEB;
+    font-family: 'Work Sans', sans-serif;
+    width: 40%;
+    text-align: justify;
+    /* margin: up right down left */
+    /* margin: 0px 50px 0px 50px; */
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #F6EBEB;
+}
+.linha{
+    text-align: center;
+}
+article a{color: #F6EBEB;}
+
+/* article:hover{background-color:rgb(56, 131, 33);} */
+
+footer{height: 50px;
+background-color: #10436d;} 
+
+@media screen and (max-width:650px) {
+    #filme-1,#filme-2,#filme-3{flex-direction: column;
+    flex-wrap: wrap;}
+
+    article img{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+        text-align: center;
+
+    }
+    #filme-2{
+        flex-direction: column-reverse;
+    }
+
+    .banner{
+        width: 100vw;
+        justify-content: center;
+    }
+    h1{font-size: 3.5rem;}
+
+    nav a {
+        display: none;
+    }
+    body{max-width: 550px;}
+
+
+}
