@@ -1,37 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@500&display=swap');
+
 * {box-sizing: border-box;}
 
-html{
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-}
-image{max-width: 100%;}
-
-main{background-color: #8DAB4A;}
-
-h1, h2, p {
+h1, h2, p, body {
     padding: 0%;
     margin: 0%;
 }
-body{
-    background: rgb(3,70,64);
-    background: linear-gradient(180deg, rgba(3,70,64,1) 0%, rgba(5,79,89,1) 21%, rgba(141,171,74,1) 36%);
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
+img{max-width: 100%;}
+
+body{background-color: #8DAB4A;}
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(3,70,64);
-    height: 50px;
-    padding: 1.5rem;
+    height: 3.5rem;
+    
 }
 header nav a{
-    padding: 1.6rem;
+    padding: 1rem 1.6rem;
     color: #F6EBEB;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.1rem;
+    text-transform: uppercase;
+    /* font-size: 1.1rem; */
+}
+header nav a:hover{
+    color: #ffffff;
+    background-color: rgba(23, 116, 80, 0.199) ;
+}
+header nav a:hover{
+    color: #ffffff;
+    background-color: rgba(23, 116, 80, 0.199) ;
 }
 
 .banner{
@@ -43,37 +48,39 @@ header nav a{
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 6rem;
+    padding: 1rem;
+    background-color: #6de2ff;
 }
-
 
 h1{
     font-family: 'Libre Baskerville', serif;
     text-align: right;
     font-size: 6rem;
     color: #6de2ff;
+    text-shadow: 5px 5px #10436d;
+    padding-right: 2.4rem;
 }
-
 #filme-1,#filme-2,#filme-3{
+    width: 90%;
     display: flex;
-    justify-content: space-evenly;
-    width: 94%;
-    margin: auto;
-    margin: 2rem 0px 1rem 0px;
-}
-
-article img{
-    border-radius: 14px; 
+    align-items: center;
+    margin: 2.4rem auto 2rem;
 }
 
 .texto{
+    padding: 1.4rem 3rem;
     color: #F6EBEB;
     font-family: 'Work Sans', sans-serif;
-    width: 40%;
     text-align: justify;
     /* margin: up right down left */
-    /* margin: 0px 50px 0px 50px; */
+    /* margin: 0px 0px 0px 0px; */
 }
+article img{
+    border-radius: 10px;
+    width: 55%;
+}
+
+
 h2{
     font-family: 'Bebas Neue', cursive;
     color: #F6EBEB;
@@ -83,38 +90,62 @@ h2{
 }
 article a{color: #F6EBEB;}
 
-/* article:hover{background-color:rgb(56, 131, 33);} */
+article:hover{background-color:#819e44;;}
+article:focus{background-color:#8DAB4A;;;}
 
-footer{height: 50px;
-background-color: #10436d;} 
+footer{
+    height: 50px;
+    background-color: #10436d;
+    color: #F6EBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+} 
 
-@media screen and (max-width:650px) {
-    #filme-1,#filme-2,#filme-3{flex-direction: column;
-    flex-wrap: wrap;}
 
-    article img{
-        margin-top: 2rem;
-        width: 100%;
+@media screen and (max-width:1000px) {
+    header{background-color: #10436d;}
+    .banner{
+        justify-content: center;
     }
-    .texto{
-        width: 100%;
+    h1{
         text-align: center;
+        padding: 0;
+    }
 
+    #filme-1,#filme-3{
+        flex-direction: column;
     }
     #filme-2{
         flex-direction: column-reverse;
+        /* margin: 2rem auto 2rem; */
     }
 
-    .banner{
-        width: 100vw;
-        justify-content: center;
+    article img{
+        width: 90%;
+        margin: auto;
     }
-    h1{font-size: 3.5rem;}
 
-    nav a {
-        display: none;
+    #filme-2 img{
+        height: 100%;
+      }
+    .texto{
+        width: 100%;
+        padding: 1rem 2rem 2.5rem 2rem;
+
     }
-    body{max-width: 550px;}
+    .texto h2{text-align: center ;}
+}
 
+@media screen and (max-width:500px){
+    header{background-color: #08817b;}
+    p{ font-size: 1.1rem;}
 
+    header{
+    flex-direction: row-reverse;
+    }
+    nav {display: none;}
+
+    footer{background-color: #08817b;}
 }
