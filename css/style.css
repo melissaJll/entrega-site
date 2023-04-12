@@ -40,7 +40,8 @@ header nav a:hover{
 }
 
 .banner{
-    background-image: url(/imagens/banner-main.jpg);
+    /* background-image: url(/imagens/banner-main.jpg); */
+    background-image: url(/imagens/banner-howl-Copia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
