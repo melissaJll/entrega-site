@@ -12,7 +12,7 @@ html{
 }
 img{max-width: 100%;}
 
-body{background-color: #8DAB4A;}
+body{background-color: #8dab4a;}
 
 header{
     display: flex;
@@ -41,7 +41,7 @@ header nav a:hover{
 
 .banner{
     /* background-image: url(/imagens/banner-main.jpg); */
-    background-image: url(/imagens/banner-howl-Copia.jpg);
+    background-image: url(/imagens/banner-ceu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ h1{
     font-family: 'Libre Baskerville', serif;
     text-align: right;
     font-size: 6rem;
-    color: #6de2ff;
+    color: #5fc7e0;
     text-shadow: 5px 5px #10436d;
     padding-right: 2.4rem;
 }
