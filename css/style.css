@@ -34,7 +34,7 @@ header nav a:hover{
     color: #ffffff;
     background-color: rgba(23, 116, 80, 0.199) ;
 }
-header nav a:hover{
+header nav a:focus{
     color: #ffffff;
     background-color: rgba(23, 116, 80, 0.199) ;
 }
@@ -45,12 +45,11 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 680px;
+    height: 640px;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 1rem;
-    background-color: #6de2ff;
 }
 
 h1{
@@ -91,8 +90,8 @@ h2{
 }
 article a{color: #F6EBEB;}
 
-article:hover{background-color:#819e44;;}
-article:focus{background-color:#8DAB4A;;;}
+article:hover{background-color:#819e44;}
+article:focus{background-color:#8DAB4A;}
 
 footer{
     height: 50px;
