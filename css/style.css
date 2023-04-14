@@ -90,8 +90,8 @@ h2{
 }
 article a{color: #F6EBEB;}
 
-article:hover{background-color:#819e44;}
-article:focus{background-color:#8DAB4A;}
+#filme-1:hover,#filme-2:hover,#filme-3:hover{background-color:#819e44;}
+#filme-1:focus, #filme-2:focus, #filme-3:focus {background-color:#8DAB4A;}
 
 footer{
     height: 50px;
