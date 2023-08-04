@@ -20,6 +20,5 @@ public class HelloWorld
         }else{
             Console.WriteLine("Salario atual após INSS {0}", posInss.ToString());
         }
-        }
     }
 }
