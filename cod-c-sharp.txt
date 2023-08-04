@@ -16,8 +16,10 @@ public class HelloWorld
         
         if (posInss > 2212){
             posIR = posInss*0.75;
+            Console.WriteLine("Salario atual após o INSS e o IR {0}", posIR.ToString());
         }else{
-            Console.WriteLine("Salario atual {0}", posInss.ToString());
+            Console.WriteLine("Salario atual após INSS {0}", posInss.ToString());
+        }
         }
     }
 }
