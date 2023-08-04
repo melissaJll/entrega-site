@@ -1,0 +1,23 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        double salario, posInss, posIR ; 
+        
+        Console.WriteLine ("Qual o salário?");
+        salario =Convert.ToDouble(console.ReadLine());
+        
+        posInss = salario * 0.89;
+        
+        if (posInss > 2212){
+            posIR = posInss*0.75;
+        }else{
+            Console.WriteLine("Salario atual {0}", posInss.ToString());
+        }
+    }
+}
